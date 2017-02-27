@@ -1,0 +1,45 @@
+//
+//  HongDoctor.pch
+//  HongDoctor
+//
+//  Created by 王磊 on 2016/12/9.
+//  Copyright © 2016年 wanglei. All rights reserved.
+//
+
+#ifndef HongDoctor_pch
+#define HongDoctor_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+
+#import "HDDownloadImageManager.h"
+#import "MBProgressHUD.h"
+#import "BOAlertController.h"
+#import "LoadingViewManager.h"
+#import "HDLocalDataManager.h"
+#import "UIImage+resizable.h"
+#import "NSString+HDString.h"
+#import "UITableView+BCAddition.h"
+#import "NSFileManager+BRAddition.h"
+#import "EmojiTextAttachment.h"
+#import "NSAttributedString+EmojiExtension.h"
+#import "HLBarButtonItem.h"
+#import "NSDate-Helper.h"
+#import "NewsRelativeTimeFormat.h"
+
+#define  Window             [[UIApplication sharedApplication] keyWindow]
+#define  ShowLoading(_msg)  [[LoadingViewManager sharedInstance] showLoadingViewInView:Window withText:_msg];
+#define  RemoveLoading      [[LoadingViewManager sharedInstance] removeLoadingView:Window];
+#define  ShowText(_text, _duration) [[LoadingViewManager sharedInstance] showHUDWithText:_text inView:[[UIApplication sharedApplication] keyWindow] duration:_duration]
+
+#define ColorFromRGB(_value)[UIColor colorWithRed:((float)((_value & 0xFF0000) >> 16))/255.0 green:((float)((_value & 0xFF00) >> 8))/255.0 blue:((float)(_value & 0xFF))/255.0 alpha:1.0]
+
+#define  k_Notification_Playudio @"HDPlayAudioNotification"
+
+#define HDbaseURL @"http://139.196.204.234:5217"
+
+
+#endif /* HongDoctor_pch */
+#endif

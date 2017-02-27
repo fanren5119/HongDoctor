@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="HDChatGroupEntity" representedClassName="HDChatGroupEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="groupdName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupGuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupHeaderURl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupMemberCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupMsgType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupNewDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupNewMessage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupOwnerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupOwnerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupPost" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupProperty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgProperty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="msgUnReadCount" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HDChatMessageEntity" representedClassName="HDChatMessageEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="groupGuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageGuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageLength" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageProperty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderGuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderHeadURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="senderName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HDMemberEntity" representedClassName="HDMemberEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="isCompany" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isOnLine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgguid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orgname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userDepartment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userGrade" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userGuid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userHeadURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="HDChatGroupEntity" positionX="-54" positionY="90" width="128" height="240"/>
+        <element name="HDChatMessageEntity" positionX="-36" positionY="153" width="128" height="195"/>
+        <element name="HDMemberEntity" positionX="-63" positionY="-18" width="128" height="240"/>
+    </elements>
+</model>
